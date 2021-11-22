@@ -1,6 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="20008000">
 	<Item Name="My Computer" Type="My Computer">
+		<Property Name="GIT_FILE" Type="Bool">false</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -11,7 +12,9 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Buttons VI" Type="Folder">
+			<Property Name="GIT_FILE" Type="Bool">false</Property>
 			<Item Name="JPEG" Type="Folder">
+				<Property Name="GIT_FILE" Type="Bool">false</Property>
 				<Item Name="BtnSizeTemplate.ai" Type="Document" URL="../Buttons VI/JPEG/BtnSizeTemplate.ai"/>
 				<Item Name="Button pressed.png" Type="Document" URL="../Buttons VI/JPEG/Button pressed.png"/>
 				<Item Name="Button.png" Type="Document" URL="../Buttons VI/JPEG/Button.png"/>
@@ -35,6 +38,7 @@
 			<Item Name="Ring.ctl" Type="VI" URL="../Buttons VI/Ring.ctl"/>
 		</Item>
 		<Item Name="SubVi" Type="Folder">
+			<Property Name="GIT_FILE" Type="Bool">false</Property>
 			<Item Name="Delay.vi" Type="VI" URL="../SubVi/Delay.vi"/>
 			<Item Name="GetDeviceName.vi" Type="VI" URL="../SubVi/GetDeviceName.vi"/>
 			<Item Name="Init Port.vi" Type="VI" URL="../SubVi/Init Port.vi"/>
@@ -85,6 +89,7 @@
 			</Item>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
+			<Property Name="GIT_FILE" Type="Bool">false</Property>
 			<Item Name="GasPod" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{E6CB9705-3F9B-4F6D-9CB7-6ADF461706F5}</Property>
@@ -101,7 +106,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{F641D097-2C4A-4D21-BAE8-E86D33DF5027}</Property>
-				<Property Name="Bld_version.build" Type="Int">9</Property>
+				<Property Name="Bld_version.build" Type="Int">10</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">GasPod.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/GasPod/GasPod.exe</Property>
@@ -110,7 +115,8 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/GasPod/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{5D3877D7-CF95-4F83-9B4F-DFDE48C27590}</Property>
+				<Property Name="GIT_FILE" Type="Bool">false</Property>
+				<Property Name="Source[0].itemID" Type="Str">{8B14177C-77B0-4E96-BCD7-E6CA08AD6580}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main.vi</Property>
