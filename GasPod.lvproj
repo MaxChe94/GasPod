@@ -35,24 +35,26 @@
 			<Item Name="LED.ctl" Type="VI" URL="../Buttons VI/LED.ctl"/>
 			<Item Name="NumInput.ctl" Type="VI" URL="../Buttons VI/NumInput.ctl"/>
 			<Item Name="Path.ctl" Type="VI" URL="../Buttons VI/Path.ctl"/>
+			<Item Name="Reset btn.ctl" Type="VI" URL="../Buttons VI/Reset btn.ctl"/>
 			<Item Name="Ring.ctl" Type="VI" URL="../Buttons VI/Ring.ctl"/>
 		</Item>
 		<Item Name="SubVi" Type="Folder">
 			<Property Name="GIT_FILE" Type="Bool">false</Property>
 			<Item Name="Delay.vi" Type="VI" URL="../SubVi/Delay.vi"/>
 			<Item Name="GasList.ctl" Type="VI" URL="../SubVi/GasList.ctl"/>
-			<Item Name="GasSettingWindow.vi" Type="VI" URL="../../Release v1.1/SubVI/GasSettingWindow.vi">
-				<Property Name="GIT_FILE" Type="Bool">false</Property>
-			</Item>
+			<Item Name="GasSettingWindow.vi" Type="VI" URL="../SubVi/GasSettingWindow.vi"/>
 			<Item Name="GetDeviceName.vi" Type="VI" URL="../SubVi/GetDeviceName.vi"/>
 			<Item Name="Init Port.vi" Type="VI" URL="../SubVi/Init Port.vi"/>
 			<Item Name="MB  Write Single Register.vi" Type="VI" URL="../SubVi/MB  Write Single Register.vi"/>
+			<Item Name="MB class.lvclass" Type="LVClass" URL="../MB class/MB class.lvclass"/>
 			<Item Name="Read GasList.vi" Type="VI" URL="../SubVi/Read GasList.vi"/>
+			<Item Name="Read Last RRG Conf.vi" Type="VI" URL="../SubVi/Read Last RRG Conf.vi"/>
 			<Item Name="Read Register.vi" Type="VI" URL="../SubVi/Read Register.vi"/>
 			<Item Name="WriteRegs.vi" Type="VI" URL="../SubVi/WriteRegs.vi"/>
 		</Item>
 		<Item Name="GasLines Control.vi" Type="VI" URL="../SubVi/GasLines Control.vi"/>
 		<Item Name="Main.vi" Type="VI" URL="../Main.vi"/>
+		<Item Name="Valves To Num.vi" Type="VI" URL="../SubVi/Valves To Num.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
@@ -114,7 +116,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{F641D097-2C4A-4D21-BAE8-E86D33DF5027}</Property>
-				<Property Name="Bld_version.build" Type="Int">11</Property>
+				<Property Name="Bld_version.build" Type="Int">17</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">GasPod.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/GasPod/GasPod.exe</Property>
@@ -123,7 +125,8 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/GasPod/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{45AE7F10-FADA-4170-BFC9-FB063F4C7318}</Property>
+				<Property Name="GIT_FILE" Type="Bool">false</Property>
+				<Property Name="Source[0].itemID" Type="Str">{9EDB265E-76D0-4D62-AF4B-E5391A8000F9}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Main.vi</Property>
